@@ -1,0 +1,112 @@
+<html>
+<head>
+	<title>Шарик, отвечающий на вопросы</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="icon" type="image/gif" href="icon.png" />
+	<link rel="Stylesheet" type="text/css" href="8ball.css" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+
+		var i = 0;
+		var answers = [
+			"Yes",
+			"Yes -<br />definitely",
+			"You may<br />rely on it",
+			"Without<br />a doubt",
+			"Signs point<br />to yes",
+			"Outlook<br />good",
+			"Most<br />likely",
+			"It is<br />decidedly so",
+			"It is<br />certain",
+			"As I see<br />it, yes",
+			"Reply hazy,<br />try again",
+			"Ask again<br />later",
+			"Better<br />not tell<br />you now",
+			"Cannot<br />predict now",
+			"Concentrate<br />and ask<br />again",
+			"Don't count<br />on it",
+			"My reply<br />is no",
+			"Outlook<br />not so good",
+			"My sources<br />say no"];
+
+		var answers = [
+			"Вперед!",
+			"Не сейчас",
+			"Не делай<br />этого",
+			"Ты шутишь?",
+			"Да,<br />но позднее",
+			"Думаю,<br />не стоит",
+			"Не надейся<br />на это",
+			"Ни в коем<br />случае",
+			"Это неплохо",
+			"Кто знает?",
+			"Туманный ответ,<br />попробуй еще<br />",
+			"Я не уверен",
+			"Я думаю,<br />хорошо",
+			"Забудь<br />об этом",
+			"Это возможно",
+			"Определенно -<br />да<br />",
+			"Быть может",
+			"Слишком<br />рано",
+			"Да",
+			"Конечно, да",
+			"Даже<br />не думай",
+			"Лучше Вам<br />пока этого<br />не знать"
+		];
+
+		$(function () {
+
+			$('.panel-text').click(function () {
+				//i = (i + 1) % answers.length;
+				i = Math.floor(Math.random() * answers.length)
+				showText(this, answers[i]);
+			}); ;
+
+			function showText(panel, text) {
+
+				var panel = $(panel);
+				var msg = $('.message', panel);
+				panel.fadeOut(500, function () {
+					msg.html(text);
+					panel.fadeIn(500);
+				});
+			}
+		});
+	
+	</script>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-18125737-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+</head>
+<body>
+	<div class="maket">
+		<div class="panel-ball">
+			<div class="panel-text" style="display: table; #position: relative; overflow: hidden;">
+				<div style="#position: absolute; #top: 50%; display: table-cell; vertical-align: middle;">
+					<div class="message" style="#position: relative; #top: -50%; #left: -50%;">
+						<!--						Click on the ball,<br />
+						to know<br />
+						the answer-->
+						Кликните,<br />
+						чтобы узнать<br />
+						ответ
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="menu">
+        <a href="http://ru.wikipedia.org/wiki/Magic_8_ball" title="О шарике в википедии" target="_blank">О шарике</a>
+	</div>
+</body>
+</html>
