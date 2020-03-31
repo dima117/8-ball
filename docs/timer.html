@@ -23,7 +23,31 @@
                 height: 100px;
                 display: inline-block;
                 position: relative;
-                top: 13px;                
+                top: 13px;     
+                animation-duration: 1s;
+                animation-name: tick;
+            }
+            
+            @keyframes slidein {
+                0% {
+                    opacity: 1
+                }
+                
+                50% {
+                    opacity: 1
+                }
+
+                60% {
+                    opacity: 0
+                }
+
+                90% {
+                    opacity: 0
+                }
+
+                100% {
+                    opacity: 1
+                }
             }
         </style>
     </head>
