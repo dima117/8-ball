@@ -26,28 +26,15 @@
                 top: 13px;     
                 animation-duration: 1s;
                 animation-name: tick;
+                animation-iteration-count: infinite;
+                opacity: 0
             }
             
             @keyframes tick {
-                0% {
-                    opacity: 1
-                }
-                
-                50% {
-                    opacity: 1
-                }
-
-                60% {
-                    opacity: 0
-                }
-
-                90% {
-                    opacity: 0
-                }
-
-                100% {
-                    opacity: 1
-                }
+                0% { opacity: 0 }
+                10% { opacity: 1 }
+                50% { opacity: 1 }
+                60% { opacity: 0 }
             }
         </style>
     </head>
