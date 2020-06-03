@@ -1,0 +1,36 @@
+<svg width="284" height="284" viewBox="0 0 284 284" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <mask id="m1">
+    <circle fill="white" cx="142" cy="142" r="142" />
+  </mask>
+  <mask id="m2">
+    <ellipse fill="white" cx="142" cy="77" rx="100" ry="75" />
+  </mask>
+  <mask id="m3">
+    <circle fill="white" cx="142" cy="-106" r="142" />
+  </mask>
+  <defs>
+    <radialGradient id="rg1">
+      <stop offset="0" stop-color="#000" />
+      <stop offset="75%" stop-color="#2d2d2d" />
+      <stop offset="100%" stop-color="#191919" />
+    </radialGradient>
+    <radialGradient id="rg2">
+      <stop offset="95%" stop-color="#000" />
+      <stop offset="100%" stop-color="rgba(0,0,0,0)" />
+    </radialGradient>
+    <radialGradient id="rg3">
+      <stop offset="45%" stop-color="#151515" />
+      <stop offset="75%" stop-color="#404040" />
+      <stop offset="80%" stop-color="#505050" />
+      <stop offset="100%" stop-color="#808080" />
+    </radialGradient>
+  </defs>
+  <circle fill="url(#rg1)" cx="142" cy="142" r="142" />
+  <circle mask="url(#m1)" fill="url(#rg2)" cx="142" cy="110" r="142" />
+  <circle mask="url(#m2)" fill="url(#rg3)" cx="142" cy="142" r="142" />
+  <circle mask="url(#m3)" fill="#fff" cx="142" cy="142" r="141.9" />
+  <circle fill="#666" cx="143" cy="143" r="67" />
+  <circle fill="#000" cx="141" cy="141" r="67" />
+  <path d="M 142,0 Q 142,11 154,11 L 166,11 Q 175,11 176.5 4.5" fill="transparent" stroke="#585858" stroke-width="8" />
+  <path d="M 142,0 Q 142,11 130,11 L 118,11 Q 109,11 107.5 4.5" fill="transparent" stroke="#585858" stroke-width="8" />
+</svg>
