@@ -5,5 +5,5 @@
   <filter id="blurMe">
     <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
   </filter>
-  <path d="M 0,0 H 150 l -75,129.9038105676658 z" / fill="rgba(100, 100,200,0.2)" mask="url(#m1)" filter="url(#blurMe)" />
+  <path d="M 0,0 H 150 l -75,129.9038105676658 z" fill="rgba(100, 100,200,0.2)" mask="url(#m1)" filter="url(#blurMe)" />
 </svg>
