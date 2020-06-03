@@ -1,6 +1,6 @@
 <svg width="150" height="150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <mask id="m1">
-    <circle fill="white" cx="75" cy="43" r="67" />
+    <circle fill="white" cx="75" cy="43" r="65" />
   </mask>
   <filter id="blurMe">
     <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
