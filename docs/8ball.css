@@ -43,6 +43,11 @@ html {
     background-image: url(triangle.svg);
 }
 
+.message {
+    position: relative;
+    bottom: 15px;
+}
+
 #menu {
     text-align: center;
     height: 28px;
