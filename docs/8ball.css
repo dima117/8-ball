@@ -26,6 +26,7 @@ html {
     margin-top: -192px;
     margin-left: -142px;
     background-image: url(ball.svg);
+    -webkit-tap-highlight-color:  transparent; 
 }
 .panel-text {
     width: 150px;
