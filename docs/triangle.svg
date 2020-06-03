@@ -1,0 +1,9 @@
+<svg width="150" height="150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <mask id="m1">
+    <circle fill="white" cx="75" cy="43" r="67" />
+  </mask>
+  <filter id="blurMe">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+  </filter>
+  <path d="M 0,0 H 150 l -75,129.9038105676658 z" / fill="rgba(100, 100,200,0.2)" mask="url(#m1)" filter="url(#blurMe)" />
+</svg>
