@@ -1,43 +1,225 @@
-<html>
-<body>
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<style>
-::-webkit-scrollbar {
-  height: 10px;
-  width: 10px;
-  background-color: #999999;
-  display: none;
-}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            html,
+            body,
+            .container {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                font-size: 72px;
+                line-height: 96px;
+            }
 
-html > ::-webkit-scrollbar {
-  width: 0px;
-  display: none;
-}
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
 
-::-webkit-scrollbar-thumb {
-  background: #999999;
-  display: none;
-}
+            .words {
+                flex: 1;
+                overflow-y: auto;
+                background-color: #f2f2f0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-transform: lowercase;
+            }
 
-::-webkit-scrollbar-track-piece {
-  background-color: #797979;
-  display: none;
-}
-</style>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Quam quisque id diam vel quam elementum. Neque egestas congue quisque egestas diam in. Eget gravida cum sociis natoque penatibus et magnis dis. Euismod lacinia at quis risus sed. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pharetra vel turpis nunc eget lorem dolor sed viverra. Consequat interdum varius sit amet mattis vulputate enim nulla. Amet nulla facilisi morbi tempus iaculis urna id. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ac turpis egestas integer eget. Habitant morbi tristique senectus et netus. Viverra suspendisse potenti nullam ac tortor vitae purus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nascetur ridiculus mus mauris vitae ultricies leo.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Quam quisque id diam vel quam elementum. Neque egestas congue quisque egestas diam in. Eget gravida cum sociis natoque penatibus et magnis dis. Euismod lacinia at quis risus sed. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pharetra vel turpis nunc eget lorem dolor sed viverra. Consequat interdum varius sit amet mattis vulputate enim nulla. Amet nulla facilisi morbi tempus iaculis urna id. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ac turpis egestas integer eget. Habitant morbi tristique senectus et netus. Viverra suspendisse potenti nullam ac tortor vitae purus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nascetur ridiculus mus mauris vitae ultricies leo.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Quam quisque id diam vel quam elementum. Neque egestas congue quisque egestas diam in. Eget gravida cum sociis natoque penatibus et magnis dis. Euismod lacinia at quis risus sed. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pharetra vel turpis nunc eget lorem dolor sed viverra. Consequat interdum varius sit amet mattis vulputate enim nulla. Amet nulla facilisi morbi tempus iaculis urna id. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ac turpis egestas integer eget. Habitant morbi tristique senectus et netus. Viverra suspendisse potenti nullam ac tortor vitae purus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nascetur ridiculus mus mauris vitae ultricies leo.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Quam quisque id diam vel quam elementum. Neque egestas congue quisque egestas diam in. Eget gravida cum sociis natoque penatibus et magnis dis. Euismod lacinia at quis risus sed. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pharetra vel turpis nunc eget lorem dolor sed viverra. Consequat interdum varius sit amet mattis vulputate enim nulla. Amet nulla facilisi morbi tempus iaculis urna id. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ac turpis egestas integer eget. Habitant morbi tristique senectus et netus. Viverra suspendisse potenti nullam ac tortor vitae purus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nascetur ridiculus mus mauris vitae ultricies leo.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Quam quisque id diam vel quam elementum. Neque egestas congue quisque egestas diam in. Eget gravida cum sociis natoque penatibus et magnis dis. Euismod lacinia at quis risus sed. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pharetra vel turpis nunc eget lorem dolor sed viverra. Consequat interdum varius sit amet mattis vulputate enim nulla. Amet nulla facilisi morbi tempus iaculis urna id. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ac turpis egestas integer eget. Habitant morbi tristique senectus et netus. Viverra suspendisse potenti nullam ac tortor vitae purus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nascetur ridiculus mus mauris vitae ultricies leo.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Quam quisque id diam vel quam elementum. Neque egestas congue quisque egestas diam in. Eget gravida cum sociis natoque penatibus et magnis dis. Euismod lacinia at quis risus sed. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pharetra vel turpis nunc eget lorem dolor sed viverra. Consequat interdum varius sit amet mattis vulputate enim nulla. Amet nulla facilisi morbi tempus iaculis urna id. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ac turpis egestas integer eget. Habitant morbi tristique senectus et netus. Viverra suspendisse potenti nullam ac tortor vitae purus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nascetur ridiculus mus mauris vitae ultricies leo.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Quam quisque id diam vel quam elementum. Neque egestas congue quisque egestas diam in. Eget gravida cum sociis natoque penatibus et magnis dis. Euismod lacinia at quis risus sed. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pharetra vel turpis nunc eget lorem dolor sed viverra. Consequat interdum varius sit amet mattis vulputate enim nulla. Amet nulla facilisi morbi tempus iaculis urna id. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ac turpis egestas integer eget. Habitant morbi tristique senectus et netus. Viverra suspendisse potenti nullam ac tortor vitae purus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nascetur ridiculus mus mauris vitae ultricies leo.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Quam quisque id diam vel quam elementum. Neque egestas congue quisque egestas diam in. Eget gravida cum sociis natoque penatibus et magnis dis. Euismod lacinia at quis risus sed. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pharetra vel turpis nunc eget lorem dolor sed viverra. Consequat interdum varius sit amet mattis vulputate enim nulla. Amet nulla facilisi morbi tempus iaculis urna id. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ac turpis egestas integer eget. Habitant morbi tristique senectus et netus. Viverra suspendisse potenti nullam ac tortor vitae purus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nascetur ridiculus mus mauris vitae ultricies leo.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Quam quisque id diam vel quam elementum. Neque egestas congue quisque egestas diam in. Eget gravida cum sociis natoque penatibus et magnis dis. Euismod lacinia at quis risus sed. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pharetra vel turpis nunc eget lorem dolor sed viverra. Consequat interdum varius sit amet mattis vulputate enim nulla. Amet nulla facilisi morbi tempus iaculis urna id. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ac turpis egestas integer eget. Habitant morbi tristique senectus et netus. Viverra suspendisse potenti nullam ac tortor vitae purus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nascetur ridiculus mus mauris vitae ultricies leo.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Quam quisque id diam vel quam elementum. Neque egestas congue quisque egestas diam in. Eget gravida cum sociis natoque penatibus et magnis dis. Euismod lacinia at quis risus sed. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pharetra vel turpis nunc eget lorem dolor sed viverra. Consequat interdum varius sit amet mattis vulputate enim nulla. Amet nulla facilisi morbi tempus iaculis urna id. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ac turpis egestas integer eget. Habitant morbi tristique senectus et netus. Viverra suspendisse potenti nullam ac tortor vitae purus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nascetur ridiculus mus mauris vitae ultricies leo.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Quam quisque id diam vel quam elementum. Neque egestas congue quisque egestas diam in. Eget gravida cum sociis natoque penatibus et magnis dis. Euismod lacinia at quis risus sed. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pharetra vel turpis nunc eget lorem dolor sed viverra. Consequat interdum varius sit amet mattis vulputate enim nulla. Amet nulla facilisi morbi tempus iaculis urna id. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ac turpis egestas integer eget. Habitant morbi tristique senectus et netus. Viverra suspendisse potenti nullam ac tortor vitae purus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nascetur ridiculus mus mauris vitae ultricies leo.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Quam quisque id diam vel quam elementum. Neque egestas congue quisque egestas diam in. Eget gravida cum sociis natoque penatibus et magnis dis. Euismod lacinia at quis risus sed. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pharetra vel turpis nunc eget lorem dolor sed viverra. Consequat interdum varius sit amet mattis vulputate enim nulla. Amet nulla facilisi morbi tempus iaculis urna id. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ac turpis egestas integer eget. Habitant morbi tristique senectus et netus. Viverra suspendisse potenti nullam ac tortor vitae purus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nascetur ridiculus mus mauris vitae ultricies leo.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Quam quisque id diam vel quam elementum. Neque egestas congue quisque egestas diam in. Eget gravida cum sociis natoque penatibus et magnis dis. Euismod lacinia at quis risus sed. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pharetra vel turpis nunc eget lorem dolor sed viverra. Consequat interdum varius sit amet mattis vulputate enim nulla. Amet nulla facilisi morbi tempus iaculis urna id. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ac turpis egestas integer eget. Habitant morbi tristique senectus et netus. Viverra suspendisse potenti nullam ac tortor vitae purus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nascetur ridiculus mus mauris vitae ultricies leo.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Quam quisque id diam vel quam elementum. Neque egestas congue quisque egestas diam in. Eget gravida cum sociis natoque penatibus et magnis dis. Euismod lacinia at quis risus sed. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pharetra vel turpis nunc eget lorem dolor sed viverra. Consequat interdum varius sit amet mattis vulputate enim nulla. Amet nulla facilisi morbi tempus iaculis urna id. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ac turpis egestas integer eget. Habitant morbi tristique senectus et netus. Viverra suspendisse potenti nullam ac tortor vitae purus. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nascetur ridiculus mus mauris vitae ultricies leo.</p>
-</body>
+            .input {
+                font-size: 42px;
+                line-height: 60px;
+                padding: 0 10px;
+                outline: none;
+                border: none;
+            }
+
+            .success {
+                color: limegreen;
+            }
+
+            .error .answer {
+                color: limegreen;
+            }
+
+            .error .value {
+                color: coral;
+                text-decoration: line-through;
+            }
+
+            .target {
+                text-align: center;
+            }
+
+            .result {
+                font-size: 0;
+                line-height: 0;
+            }
+
+            .clear,
+            .result-success,
+            .result-fail {
+                width: 10px;
+                height: 10px;
+                margin: 5px;
+                display: inline-block;
+            }
+
+            .clear {
+                padding: 5px;
+                margin: 0;
+                color: crimson;
+                font-size: 10px;
+                line-height: 10px;
+                vertical-align: bottom;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+            .clear:hover {
+                background-color: #f2f2f2;
+            }
+
+            .result-success {
+                background-color: limegreen;
+            }
+            .result-fail {
+                background-color: coral;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="target" class="target"></div>
+            <div id="words" class="words"></div>
+            <input id="input" class="input" />
+            <div id="result" class="result">
+                <div id="clear" class="clear">✕</div>
+            </div>
+        </div>
+
+        <script>
+            const items = [
+                { forms: ['bear', 'bore', 'born'], ru: 'родить' },
+                { forms: ['beat', 'beat', 'beaten'], ru: 'бить' },
+                { forms: ['become', 'became', 'become'], ru: 'становиться' },
+                { forms: ['begin', 'began', 'begun'], ru: 'начинать' },
+                { forms: ['bind', 'bound', 'bound'], ru: 'связать' },
+                { forms: ['bite', 'bit', 'bitten'], ru: 'кусать' },
+                { forms: ['bleed', 'bled', 'bled'], ru: 'кровоточить' },
+                { forms: ['blow', 'blew', 'blown'], ru: 'дуть' },
+                { forms: ['break', 'broke', 'broken'], ru: 'ломать' },
+                { forms: ['bring', 'brought', 'brought'], ru: 'приносить' },
+                { forms: ['build', 'built', 'built'], ru: 'строить' },
+                { forms: ['burn', 'burnt', 'burnt'], ru: 'жечь; гореть' },
+                { forms: ['buy', 'bought', 'bought'], ru: 'покупать' },
+                { forms: ['can', 'could', 'could'], ru: 'мочь; уметь' },
+                {
+                    forms: ['catch', 'caught', 'caught'],
+                    ru: 'ловить,хватать,успеть',
+                },
+                { forms: ['choose', 'chose', 'chosen'], ru: 'выбирать' },
+                { forms: ['come', 'came', 'come'], ru: 'приходить' },
+                { forms: ['cost', 'cost', 'cost'], ru: 'стоить' },
+                { forms: ['cut', 'cut', 'cut'], ru: 'резать' },
+            ];
+
+            const target = document.getElementById('target');
+            const words = document.getElementById('words');
+            const input = document.getElementById('input');
+            const result = document.getElementById('result');
+            const clear = document.getElementById('clear');
+            let answers = undefined;
+
+            const progress = JSON.parse(
+                localStorage.getItem('progress') || '[]'
+            );
+            progress.forEach(addProgress);
+
+            function setItem() {
+                const index = Math.floor(Math.random() * items.length);
+                const { ru, forms } = items[index];
+
+                target.innerText = ru;
+                words.innerHTML = '';
+                answers = forms;
+            }
+
+            function addProgress(val) {
+                if (val) {
+                    result.insertAdjacentHTML(
+                        'beforeend',
+                        '<div class="result-success"></div>'
+                    );
+                } else {
+                    result.insertAdjacentHTML(
+                        'beforeend',
+                        '<div class="result-fail"></div>'
+                    );
+                }
+            }
+
+            function applyWord(value) {
+                if (!value.trim()) {
+                    return;
+                }
+
+                words.innerHTML += `<div><span class="value">${value}</span></div>`;
+
+                const divs = words.querySelectorAll('div');
+                if (divs.length === answers.length) {
+                    let resultCount = 0;
+
+                    for (let i = 0; i < answers.length; i++) {
+                        const test = divs[i].innerText.toLowerCase();
+                        const answer = answers[i].toLowerCase();
+
+                        if (test === answer) {
+                            divs[i].classList.add('success');
+                            resultCount++;
+                        } else {
+                            divs[i].classList.add('error');
+                            divs[
+                                i
+                            ].innerHTML += ` <span class="answer">${answer}</span>`;
+                        }
+                    }
+
+                    addProgress(resultCount === answers.length);
+                    progress.push(resultCount === answers.length);
+                    localStorage.setItem('progress', JSON.stringify(progress));
+
+                    answers = undefined;
+                }
+            }
+
+            input.addEventListener('keypress', (e) => {
+                if (e.charCode === 13) {
+                    if (answers) {
+                        applyWord(input.value);
+                    } else {
+                        setItem();
+                    }
+
+                    input.value = '';
+                }
+            });
+
+            clear.addEventListener('click', () => {
+                if (progress.length && confirm('Очистить прогресс?')) {
+                    progress.length = 0;
+                    localStorage.setItem('progress', JSON.stringify(progress));
+                    result
+                        .querySelectorAll('.result-success,.result-fail')
+                        .forEach((div) => div.remove());
+                }
+            });
+
+            input.focus();
+        </script>
+    </body>
 </html>
