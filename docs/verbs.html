@@ -23,7 +23,7 @@
             .words {
                 flex: 1;
                 overflow-y: auto;
-                background-color: #f2f2f0;
+                background-color: #cce9fd;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -55,6 +55,12 @@
                 text-align: center;
             }
 
+            .target,
+            .footer {
+                box-shadow: 0 0 7px 0 rgba(0,0,0,.5);
+                z-index: 1;
+            }
+
             .result {
                 font-size: 0;
                 line-height: 0;
@@ -81,7 +87,7 @@
             }
 
             .clear:hover {
-                background-color: #f2f2f2;
+                background-color: #cce9fd;
             }
 
             .result-success {
@@ -96,15 +102,17 @@
         <div class="container">
             <div id="target" class="target"></div>
             <div id="words" class="words"></div>
-            <input id="input" class="input" />
-            <div id="result" class="result">
-                <div id="clear" class="clear">✕</div>
+            <div class="footer">
+                <input id="input" class="input" />
+                <div id="result" class="result">
+                    <div id="clear" class="clear">✕</div>
+                </div>
             </div>
         </div>
 
         <script>
             const items = [
-            { forms: ['bear', 'bore', 'born'], ru: 'родить' },
+                { forms: ['bear', 'bore', 'born'], ru: 'родить' },
                 { forms: ['beat', 'beat', 'beaten'], ru: 'бить' },
                 { forms: ['become', 'became', 'become'], ru: 'становиться' },
                 { forms: ['begin', 'began', 'begun'], ru: 'начинать' },
@@ -138,6 +146,18 @@
                 { forms: ['drink', 'drank', 'drunk'], ru: 'пить' },
                 { forms: ['drive', 'drove', 'driven'], ru: 'водить' },
                 { forms: ['dream', 'dreamt', 'dreamt'], ru: 'мечтать' },
+                { forms: ['eat', 'ate', 'eaten'], ru: 'есть (кушать)' },
+                { forms: ['fall', 'fell', 'fallen'], ru: 'упасть' },
+                { forms: ['feed', 'fed', 'fed'], ru: 'кормить' },
+                { forms: ['feel', 'felt', 'felt'], ru: 'чувствовать' },
+                { forms: ['fight', 'fought', 'fought'], ru: 'драться' },
+                { forms: ['find', 'found', 'found'], ru: 'находить' },
+                { forms: ['flee', 'fled', 'fled'], ru: 'убегать' },
+                { forms: ['fly', 'flew', 'flown'], ru: 'летать' },
+                { forms: ['forbid', 'forbade', 'forbidden'], ru: 'запрещать' },
+                { forms: ['forget', 'forgot', 'forgotten'], ru: 'забывать' },
+                { forms: ['forgive', 'forgave', 'forgiven'], ru: 'прощать' },
+                { forms: ['freeze', 'froze', 'frozen'], ru: 'замораживать' },
             ];
 
             const target = document.getElementById('target');
